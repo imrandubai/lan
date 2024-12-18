@@ -1201,6 +1201,7 @@ class Component(CustomComponent):
             real_time_refresh=True,
             table_schema=TOOL_TABLE_SCHEMA,
             value=tool_data,
+            table_icon="Hammer",
             trigger_icon="Hammer",
             trigger_text="",
             table_options=TableOptions(
