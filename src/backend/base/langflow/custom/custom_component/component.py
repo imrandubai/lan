@@ -1213,7 +1213,10 @@ class Component(CustomComponent):
                 block_hide=True,
                 block_select=True,
                 hide_options=True,
-                field_parsers={"name": FieldParserType.SNAKE_CASE},
+                field_parsers={
+                    "name": [FieldParserType.SNAKE_CASE, FieldParserType.NO_BLANK],
+                    "commands": FieldParserType.COMMANDS,
+                },
                 description=TOOLS_METADATA_INFO,
             ),
         )
