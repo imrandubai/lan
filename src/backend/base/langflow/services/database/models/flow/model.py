@@ -10,6 +10,7 @@ from emoji import purely_emoji
 from fastapi import HTTPException, status
 from loguru import logger
 from pydantic import BaseModel, field_serializer, field_validator, model_validator
+from pydantic import BaseModel, field_serializer, field_validator, model_validator
 from sqlalchemy import Text, UniqueConstraint
 from sqlmodel import JSON, Column, Field, Relationship, SQLModel
 
